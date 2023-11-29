@@ -1,5 +1,5 @@
 ﻿//zadanie domowe Dzień 5
-int number = 345677;
+int number = 345677251;
 string numberAsString = number.ToString();
 List<char> digits = numberAsString.ToList();
 
@@ -52,7 +52,8 @@ foreach (char digit in digits)
         counters[9]++;
     }
 }
+Console.WriteLine("W liczbie : "+number);
 for (int i = 0; i < counters.Length; i++)
 {
-    Console.WriteLine("Cyfra " + i + " występuje " + counters[i] + " razy");
+    Console.WriteLine("cyfra " + i + " występuje " + counters[i] + " razy");
 }
