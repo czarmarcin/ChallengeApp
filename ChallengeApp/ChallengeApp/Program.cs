@@ -1,7 +1,9 @@
 ﻿//zadanie domowe Dzień 4
+using System.ComponentModel.Design;
+
 var name = "Ewa";
-char gender = 'K';
-var age = 33;
+char gender = 'M';
+var age = 120;
 //dodatkowe - weryfikacja wieku
 if (age < 18)
 {
@@ -23,4 +25,16 @@ if (name == "Ewa" && age == 33 )
 if (gender == 'M' && age < 18)
 {
     Console.WriteLine("Niepełnoletni mężczyzna");
+}
+else if (gender == 'M' && age < 60) 
+{
+    Console.WriteLine("Dojrzały mężczyzna");
+}
+else if (gender == 'M' && age < 120) 
+{
+    Console.WriteLine("Starszy mężczyzna");
+}
+else if (gender == 'M' && age >= 120) 
+{
+    Console.WriteLine("Nie ma takiej opcji");
 }
