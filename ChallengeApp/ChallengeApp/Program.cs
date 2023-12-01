@@ -2,7 +2,7 @@
 int number = 345677251;
 string numberAsString = number.ToString();
 List<char> digits = numberAsString.ToList();
-
+char[] checkForCounters = new char[] { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
 int[] counters = new int[10];
 for (int i = 0; i < counters.Length; i++)
 {
@@ -11,45 +11,12 @@ for (int i = 0; i < counters.Length; i++)
 
 foreach (char digit in digits)
 {
-    if (digit == '0')
+    for (int j = 0; j < checkForCounters.Length; j++)
     {
-        counters[0]++;
-    }
-    else if (digit == '1')
-    {
-        counters[1]++;
-    }
-    else if (digit == '2')
-    {
-        counters[2]++;
-    }
-    else if (digit == '3')
-    {
-        counters[3]++;
-    }
-    else if (digit == '4')
-    {
-        counters[4]++;
-    }
-    else if (digit == '5')
-    {
-        counters[5]++;
-    }
-    else if (digit == '6')
-    {
-        counters[6]++;
-    }
-    else if (digit == '7')
-    {
-        counters[7]++;
-    }
-    else if (digit == '8')
-    {
-        counters[8]++;
-    }
-    else if (digit == '9')
-    {
-        counters[9]++;
+        if (digit == checkForCounters[j])
+        {
+            counters[j]++;
+        }
     }
 }
 Console.WriteLine("W liczbie : "+number);
