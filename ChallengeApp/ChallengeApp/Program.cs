@@ -1,4 +1,6 @@
 ﻿//zadanie domowe Dzień 6
+using ChallengeApp;
+
 Empl empl1 = new Empl("Adam", "Słodowy", 44);
 Empl empl2 = new Empl("Roman", "Romanowski", 18);    
 Empl empl3 = new Empl("Zenobi", "vel Golota",99);
@@ -33,7 +35,6 @@ if (empl1.result >= empl2.result && empl1.result >= empl3.result)
     {
         Console.WriteLine("Tyle samo zdobył " + empl3.Name + " " + empl3.Surname + ", lat" + empl3.Age);
     }
-
 }
 else if (empl2.result >= empl1.result && empl2.result >= empl3.result)
 {
@@ -59,31 +60,5 @@ else if (empl3.result >= empl1.result && empl3.result >= empl2.result)
     if (empl3.result == empl2.result)
     {
         Console.WriteLine("Tyle samo zdobył " + empl2.Name + " " + empl2.Surname + ", lat" + empl2.Age);
-    }
-
-}
-class Empl
-{
-    private List<int> score = new List<int>();
-    public Empl(string name, string surname, int age)
-    {
-        this.Name = name ;
-        this.Surname = surname ;    
-        this.Age = age ;
-    }
-    public string Name { get; private set; }
-    public string Surname { get; private set; } 
-    public int Age { get; private set;}
-
-    public void AddScore(int number)
-    {
-        this.score.Add(number);
-    }
-    public int result
-    {
-        get
-        { 
-            return this.score.Sum(); 
-        }
     }
 }
