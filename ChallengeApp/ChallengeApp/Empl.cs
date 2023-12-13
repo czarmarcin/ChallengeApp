@@ -18,7 +18,7 @@ namespace ChallengeApp
         {
             this.score.Add(number);
         }
-        public int result
+        public int Result
         {
             get
             {

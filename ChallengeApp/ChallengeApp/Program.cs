@@ -23,41 +23,41 @@ empl3.AddScore(3);
 empl3.AddScore(4);
 empl3.AddScore(0);
 
-if (empl1.result >= empl2.result && empl1.result >= empl3.result)
+if (empl1.Result >= empl2.Result && empl1.Result >= empl3.Result)
 {
-    int highResult = empl1.result;
+    int highResult = empl1.Result;
     Console.WriteLine("Najwięcej punktów zdobył " + empl1.Name + " " + empl1.Surname + ", lat" + empl1.Age + " -> " + highResult);
-    if (empl1.result == empl2.result)
+    if (empl1.Result == empl2.Result)
     {
         Console.WriteLine("Tyle samo zdobył " + empl2.Name + " " + empl2.Surname +", lat" + empl2.Age);
     }
-    if (empl1.result == empl3.result)
+    if (empl1.Result == empl3.Result)
     {
         Console.WriteLine("Tyle samo zdobył " + empl3.Name + " " + empl3.Surname + ", lat" + empl3.Age);
     }
 }
-else if (empl2.result >= empl1.result && empl2.result >= empl3.result)
+else if (empl2.Result >= empl1.Result && empl2.Result >= empl3.Result)
 {
-    int highResult = empl2.result;
+    int highResult = empl2.Result;
     Console.WriteLine("Najwięcej punktów zdobył " + empl2.Name + " " + empl2.Surname + ", lat" + empl2.Age + " -> " + highResult);
-    if (empl2.result == empl1.result)
+    if (empl2.Result == empl1.Result)
     {
         Console.WriteLine("Tyle samo zdobył " + empl1.Name + " " + empl1.Surname + ", lat" + empl1.Age);
     }
-    if (empl2.result == empl3.result)
+    if (empl2.Result == empl3.Result)
     {
         Console.WriteLine("Tyle samo zdobył " + empl3.Name + " " + empl3.Surname + ", lat" + empl3.Age);
     }
 }
-else if (empl3.result >= empl1.result && empl3.result >= empl2.result)
+else if (empl3.Result >= empl1.Result && empl3.Result >= empl2.Result)
 {
-    int highResult = empl3.result;
+    int highResult = empl3.Result;
     Console.WriteLine("Najwięcej punktów zdobył " + empl3.Name + " " + empl3.Surname + ", lat" + empl1.Age + " -> " + highResult);
-    if (empl3.result == empl1.result)
+    if (empl3.Result == empl1.Result)
     {
         Console.WriteLine("Tyle samo zdobył " + empl1.Name + " " + empl1.Surname + ", lat" + empl1.Age);
     }
-    if (empl3.result == empl2.result)
+    if (empl3.Result == empl2.Result)
     {
         Console.WriteLine("Tyle samo zdobył " + empl2.Name + " " + empl2.Surname + ", lat" + empl2.Age);
     }
